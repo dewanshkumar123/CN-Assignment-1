@@ -2,7 +2,7 @@ from scapy.all import *
 from time import time
 from collections import defaultdict
 import matplotlib.pyplot as plt
-capture_duration = 1600  
+capture_duration = 2000  
 interface = "eth0"     # Adjust to your network interface
 
 
