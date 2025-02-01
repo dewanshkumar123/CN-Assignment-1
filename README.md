@@ -8,6 +8,9 @@ This repository contains the implementation and report for CS 331: Computer Netw
 - `sniffer.py`: Packet sniffer script for analyzing network packets.
 - `test_script.sh`: Bash script to test the sniffer by running `tcpreplay` and `sniffer.py` simultaneously.
 - `README.md`: This file, providing an overview and execution instructions.
+- `unique_flows.txt`:  unique source-destination pairs (source IP:port and destination IP:port) in the captured data.
+- `source_flow_count.txt`: dictionary where the key is the IP address and the value is the total flows for that IP address as the source.
+- `destination_flow_count.txt`: dictionary where the key is the IP address and the value is the total flows for that IP address as the destination.
 
 ## Execution Instructions
 
