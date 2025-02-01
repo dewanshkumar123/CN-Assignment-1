@@ -6,35 +6,32 @@ This repository contains the implementation and report for CS 331: Computer Netw
 ## Repository Contents
 - `assignment1.pdf`: Compiled report.
 - `sniffer.py`: Packet sniffer script for analyzing network packets.
-- `test_script.py`: Script to test the sniffer.
+- `test_script.sh`: Bash script to test the sniffer by running `tcpreplay` and `sniffer.py` simultaneously.
 - `README.md`: This file, providing an overview and execution instructions.
 - `packet_size_distribution.png`: Histogram of packet sizes.
 
 ## Execution Instructions
 
-### 1. Running the Packet Sniffer
-Ensure you have Python installed. Run the sniffer using:
+### 1. Clone the Repository
+First, clone the repository to your local machine:
 ```bash
-python sniffer.py 5.pcap
+git clone https://github.com/dewanshkumar123/CN-Assignment-1
+cd CN-Assignment-1
 ```
 
-### 2. Replaying the PCAP File
-To replay the traffic using `tcpreplay`:
+### 2. Install Dependencies
+Ensure you have Python 3.x installed. Install the required Python packages and `tcpreplay`:
 ```bash
-tcpreplay --intf1=eth0 5.pcap
-```
-Replace `eth0` with the appropriate network interface.
-
-### 3. Running the Test Script
-To validate the sniffer's functionality:
-```bash
-python test_script.py
+sudo apt update
+sudo apt install tcpreplay
+pip install scapy matplotlib
 ```
 
-### 4. Compiling the Report
-To generate the PDF report from LaTeX:
+### 3. Run the Test Script
+The `test_script.sh` script will run `tcpreplay` and `sniffer.py` simultaneously. Ensure you are using Ubuntu or a compatible Linux distribution.
+
 ```bash
-pdflatex assignment1.tex
+bash test_script.sh
 ```
 
 ## Dependencies
@@ -52,8 +49,15 @@ pdflatex assignment1.tex
   sudo apt install tcpreplay  # Linux
   ```
 
+## Test Script (`test_script.sh`)
+The `test_script.sh` script is a bash script that runs `tcpreplay` and `sniffer.py` simultaneously.
+
+
+Make sure to give execute permission to the script before running it:
+```bash
+chmod +x test_script.sh
+```
+
 ## Authors
 - Team No. - 23
 - Aryan Sahu (22110038), Dewansh Kumar(22110071)
-
-
