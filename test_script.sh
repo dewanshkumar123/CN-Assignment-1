@@ -2,7 +2,7 @@
 
 # Set the network interface (change eth0 to your appropriate interface)
 INTERFACE="eth0" #change according to device or VM
-PCAP_FILE="5.pcap"
+PCAP_FILE="5.pcap" # Give path/name of the pcap file to replay
 
 # Run tcpreplay in the background
 echo "Replaying PCAP file using tcpreplay..."
