@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the network interface (change eth0 to your appropriate interface)
-INTERFACE="eth0"
+INTERFACE="eth0" #change according to device or VM
 PCAP_FILE="5.pcap"
 
 # Run tcpreplay in the background
@@ -10,7 +10,7 @@ tcpreplay -p 500 --intf1=$INTERFACE $PCAP_FILE &
 
 # Run the sniffer script
 echo "Starting packet sniffer..."
-python sniffer.py $PCAP_FILE
+python3 sniffer.py 
 
 # Wait for all background processes to finish
 wait
