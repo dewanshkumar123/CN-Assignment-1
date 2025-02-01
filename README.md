@@ -18,6 +18,9 @@ First, clone the repository to your local machine:
 git clone https://github.com/dewanshkumar123/CN-Assignment-1
 cd CN-Assignment-1
 ```
+* Add the required pcap file (5.pcap) in the cloned folder (CN-Assignment-1).
+  
+  PS: Link to the pcap files: https://drive.google.com/drive/folders/1n84jGddZ38fDjy9jKH3qw3J_H0SaKThu
 
 ### 2. Install Dependencies
 Ensure you have Python 3.x installed. Install the required Python packages and `tcpreplay`:
